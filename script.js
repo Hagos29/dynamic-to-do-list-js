@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // declare element by Id
     const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
-    const takeList = document.getElementById('task-list');
+    const taskList = document.getElementById('task-list');
 
     // addTask function
     function addTask() {
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             //const newTask = document.getElementById('todo-app');
         newButton.onclick = function () {
-            takeList.removeChild(li);
+            taskList.removeChild(li);
         }
             // append to document
             li.appendChild(newButton);
-            takeList.appendChild(li);
-            takeList.value = " ";
+            taskList.appendChild(li);
+            taskList.value = " ";
         }; 
         if (taskText == " ") {
             alert('please enter a task');
