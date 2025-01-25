@@ -32,4 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
             alert.prompt('please enter a task');
         }
     }
+    const addButton = document.getElementById('add-task-btn');
+    addButton.addEventListener('click', function () {
+        addTask();
+    });
+    
+    
+    taskInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            addTask();
+        }
+    })
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    addTask();
 });
