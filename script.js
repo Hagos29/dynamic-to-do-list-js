@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // declare element by Id
-     addButton = document.getElementById('add-task-btn');
+     const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
     const takeList = document.getElementById('task-list');
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert.prompt('please enter a task');
         }
     }
-    const addButton = document.getElementById('add-task-btn');
+  
     addButton.addEventListener('click', function () {
         addTask();
     });
