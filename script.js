@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
   
-    addButton.addEventListener('click', function () {
+    addButton.addEventListener('button', function () {
         addTask();
     });
     
