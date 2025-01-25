@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // addTask function
     function addTask() {
-        const taskText = document.getElementById('task-input').value.trim();
+        const taskText = taskInput.value.trim();
         if (taskText != " ") {
             //add element
             const li = document.createElement('li');
